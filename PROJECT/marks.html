@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+   nav {
+      position: sticky;
+      top: 5px;
+      background: linear-gradient(to right, navy, lightblue);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    </style>
+  <meta charset="UTF-8">
+  <title>Marks – Bweyogerere Voc</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<nav>
+  <a href="index.html">Index</a><br>
+  <a href="program.html">programs</a>
+  <a href="marks.html">marks</a>
+  <a href="OFFICAL.HTML">officals</a>
+</nav>
+  
+<body>
+  <div class="content-page">
+    <h1>Your Coursework Marks</h1>
+
+    <!-- PDF viewer (inline embed) -->
+    <embed src="assets/marks.pdf" type="application/pdf" width="100%" height="600px">
+    
+    <!-- Or you can use a table instead:
+    <table>
+      <tr><th>Course</th><th>Mark</th></tr>
+      <tr><td>Mathematics</td><td>85</td></tr>
+      <tr><td>English</td><td>78</td></tr>
+    </table>
+    -->
+
+    <a href="program.html" class="next-btn">View Program &rarr;</a>
+  </div>
+</body>
+</html>

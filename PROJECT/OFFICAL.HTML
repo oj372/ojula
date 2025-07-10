@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bweyogerere Voc • Student Login</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body, html { height: 100%; font-family: Arial, sans-serif; }
+    .container {
+      display: flex;
+      height: 100%;
+    }
+    .left, .right {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+    .left {
+      background-color: #e0f7ff;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .left h1 {
+      color: #005f99;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .left p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #333;
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    .login-box {
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+    .logo img {
+      max-width: 150px;
+    }
+    .login-box h2 {
+      color: #005f99;
+      margin-bottom: 20px;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .login-box input[type="submit"] {
+      background-color: #005f99;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .login-box input[type="submit"]:hover {
+      background-color: #004a7a;
+    }
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: calc(100% - 40px);
+      text-align: center;
+    }
+    .social-links a {
+      margin: 0 8px;
+      color: #005f99;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: #003f66;
+    }
+    @media (max-width: 768px) {
+      .container { flex-direction: column; }
+      .left, .right { height: 50%; }
+      footer { position: relative; bottom: auto; margin-top: 20px; }
+    }
+     
+   nav {
+      position: sticky;
+      top: 5px;
+      background: linear-gradient(to right, navy, lightblue);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    
+  </style>
+</head>
+<nav>
+  <a href="index.html">Index</a><br>
+  <a href="program.html">programs</a>
+  <a href="marks.html">marks</a>
+  <a href="OFFICAL.HTML">officals</a>
+</nav>
+
+<body>
+  <div class="container">
+    <!-- Left: School Info -->
+    <div class="left">
+      <h1>Welcome to Bweyogerere Vocational Training Centre</h1>
+      <p>
+        Bweyogerere Vocational is a leading vocational institution committed to empowering Trainees with practical skills and real-world knowledge. Join our community to advance your career in technical trades, ICT, and Engineering. Log in to access your personalized learning portal.
+      </p>
+    </div>
+
+    <!-- Right: Login Form -->
+    <div class="right">
+      <div class="login-box">
+        <div class="logo">
+            <div class="header">
+    
+    
+          <img src="newlogo.png" alt="Bweyogerere Voc Logo">
+        </div>
+        <h2>Student Login</h2>
+        <form action="#" method="post">
+          <input type="text" name="student_id" placeholder="Student ID" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="submit" value="Login">
+        </form>
+        <footer>
+          <footer>
+  <a href="https://www.bvtc.ac.ug" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Watch our YouTube video">
+    <img src="social.png" alt="Watch us on YouTube" width="50" height="50">
+  </a>
+
+            
+
+            
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

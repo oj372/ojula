@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+   nav {
+      position: sticky;
+      top: 5px;
+      background: linear-gradient(to right, navy, lightblue);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    </style>
+  <meta charset="UTF-8">
+  <title>Login – Bweyogerere Voc</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<nav>
+  <a href="index.html">Index</a><br>
+  
+  <a href="program.html">programs</a>
+  <a href="marks.html">marks</a>
+  <a href="OFFICAL.HTML">officals</a>
+</nav>
+<body>
+  <div class="login-page">
+    <img src="assets/newlogo.png" alt="Bweyogerere Voc Logo" class="logo">
+    <h2>Student Login</h2>
+    <form action="marks.html" method="get">
+      <input type="text" name="student_id" placeholder="Student ID" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+  </div><script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    const firstName = document.getElementById("first-name").value.trim();
+    const email = document.getElementById("email").value.trim();
+
+    if (!firstName || !email) {
+      alert("Please fill in required fields.");
+      e.preventDefault(); // Prevent form from submitting
+    }
+  });
+</script>
+
+
+</body>
+</html>
